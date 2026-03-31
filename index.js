@@ -3,6 +3,7 @@ const dotenv = require('dotenv')
 const auth = require('./src/middleware/auth.js')
 const authRoutes = require('./src/routes/authRotes.js')
 const userRoutes = require('./src/routes/userRoutes.js')
+const vaultDataTestRoutes = require('./src/routes/vaultDataTestRoutes.js')
 
 const cors = require('cors');
 
@@ -21,7 +22,7 @@ app.use(cors({
 
 app.use('/api/auth', authRoutes);
 app.use('/api', auth, userRoutes);
-
+app.use('/api', auth, vaultDataTestRoutes);
 
 
 
