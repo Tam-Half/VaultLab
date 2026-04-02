@@ -22,7 +22,6 @@ async function encryptData(plaintext) {
 async function decryptData(ciphertext) {
     if (!ciphertext) return null;
 
-    // 1. Dùng .trim() để xóa sạch khoảng trắng thừa do DB tự thêm vào
     const cleanCiphertext = ciphertext.trim();
 
     // 2. Kiểm tra xem dữ liệu có bắt đầu bằng chữ "vault:v1:" không
