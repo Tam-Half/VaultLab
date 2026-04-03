@@ -6,6 +6,7 @@ const { pipeline } = require('stream/promises');
 const { decryptDEK } = require('../vault/vaultEnvelope'); 
 
 async function runQuickTest() {
+    console.log("==============================================");
     console.log("🚀 Bắt đầu test nhanh luồng Giải mã...");
 
     // ==========================================
@@ -69,3 +70,4 @@ async function runQuickTest() {
 
 // Chạy hàm test
 runQuickTest();
+// test
