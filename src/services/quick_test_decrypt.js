@@ -12,10 +12,10 @@ async function runQuickTest() {
     // 1. DÁN DỮ LIỆU TỪ DATABASE CỦA BẠN VÀO ĐÂY
     // ==========================================
     // Copy chính xác giá trị ở cột ciphertext (bao gồm IV|AuthTag|Đường_dẫn)
-    const dbCiphertext = "a0648c4012272cec28bedcad|32b76ceb6f069223d0e39c106e906d66|G:\\ThucTap\\BookingFootBall_BE\\storage\\PARTY.docx_1775033472546-997502476.enc"; 
+    const dbCiphertext = "cb35db21dfb2d10da728cb13|e538c58b158073a99360fbde9645740d|G:\\ThucTap\\BookingFootBall_BE\\storage\\PARTY.docx_1775098839883-627590727.enc"; 
     
     // Copy chính xác giá trị ở cột data_encryption_key
-    const wrappedDek = "vault:v4:fDe6AFDBYEhKVGVhAh477WJQgI4cpPxUfPRAddogOdtDqaib5EPRlQti/YGiZhXO/kEcApPxxOaNGtI6";
+    const wrappedDek = "vault:v4:wpI4SM11z8+smWxgfYwX6aBzucOgCcw5WYGFSruALMMChWZ+meK0O5GEMQpMlnnpwu6WC3u3OMWEFgLO";
     
     // Tên file đầu ra sau khi giải mã thành công
     const outputDecryptedFile = "./KET_QUA_GIAI_MA.docx";
